@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: adventureworks_etl_0522
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: sales_salesorderheader
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: salesorderid
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+          - name: status
+            description: Note that the status can change over time
+
+      - name: person_address
+      - name: person_countryregion
+      - name: person_person 
+      - name: person_stateprovince
+      - name: production_product
+      - name: sales_creditcard
+      - name: sales_customer
+      - name: sales_salesorderdetail
+      - name: sales_salesorderheadersalesreason
+      - name: sales_salesreason
+    

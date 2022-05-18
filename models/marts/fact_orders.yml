@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fact_orders
+    columns:
+      - name: address_fk
+        tests:
+          - relationships:
+              to: ref('dim_addresses')
+              field: address_sk
+      - name: creditcard_fk
+        tests:
+          - relationships:
+              to: ref('dim_creditcards')
+              field: creditcard_sk
+      - name: customer_fk
+        tests:
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_sk
+      - name: product_fk
+        tests:
+          - relationships:
+              to: ref('dim_products')
+              field: product_sk
+      - name: salesreason_fk
+        tests:
+          - relationships:
+              to: ref('dim_salesreasons')
+              field: salesreason_sk
+     
+
+    
+
+        
+      

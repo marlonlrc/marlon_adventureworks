@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_addresses
+    columns:
+      - name: address_sk
+        description: The primary key of the addresses generated with row_number
+        tests:
+          - unique
+          - not_null   
