@@ -7,4 +7,19 @@ models:
         description: The primary key of the addresses generated with row_number
         tests:
           - unique
-          - not_null   
+          - not_null
+      - name: addressid
+        description: Primary key for Address records 
+      - name: city
+        description: Name of the city
+      - name: stateprovinceid
+        description: Unique identification number for the state or province.  
+      - name: stateprovincecode
+        description: ISO standard state or province code 
+      - name: statename
+        description: State or province description 
+      - name: countryregioncode
+        description: ISO standard code for countries and regions 
+      - name: countryname
+        description: Country or region name
+          
