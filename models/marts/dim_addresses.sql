@@ -1,7 +1,7 @@
 with 
 staging as (
 select * 
-from {{ref('stg_address')}})
+from {{ref('stg_addresses')}})
 
 , transformed as ( 
 select

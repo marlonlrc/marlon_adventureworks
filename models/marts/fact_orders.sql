@@ -66,7 +66,6 @@ orderheader_with_sk.salesorderid
 , orderheader_with_sk.customer_fk
 , orderheader_with_sk.creditcard_fk
 , orderheader_with_sk.address_fk
---, orderheader_with_sk.shiptoaddressid
 , orderheader_with_sk.orderdate
 , orderheader_with_sk.status
 , salesorderdetailid

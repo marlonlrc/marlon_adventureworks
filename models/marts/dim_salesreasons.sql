@@ -1,7 +1,7 @@
 with 
 staging as (
 select * 
-from {{ref('stg_salesreason')}})
+from {{ref('stg_salesreasons')}})
 
 , transformed as ( 
 select

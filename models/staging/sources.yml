@@ -6,12 +6,6 @@ sources:
     tables:
       - name: sales_salesorderheader
         description: General sales order information.
-        columns:
-          - name: salesorderid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
       - name: person_address
         description: Street address information for customers, employees, and vendors.
       - name: person_countryregion
@@ -32,4 +26,3 @@ sources:
         description: Cross-reference table mapping sales orders to sales reason codes.
       - name: sales_salesreason
         description: Lookup table of customer purchase reasons.
-    
