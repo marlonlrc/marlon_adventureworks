@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_creditcards
+    columns:
+      - name: creditcard_sk
+        description: The primary key of the creditcards generated with row_number
+        tests:
+          - unique
+          - not_null   
