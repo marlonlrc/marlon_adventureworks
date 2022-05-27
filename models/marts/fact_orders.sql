@@ -30,7 +30,6 @@ with
     , customers.customer_sk as customer_fk
     , creditcards.creditcard_sk as creditcard_fk
     , addresses.address_sk as address_fk
-    --, salesorderheader.shiptoaddressid
     , salesorderheader.orderdate
     , salesorderheader.status
     from {{ ref ('stg_salesorderheader')}} as salesorderheader
@@ -68,7 +67,7 @@ orderheader_with_sk.salesorderid
 , orderheader_with_sk.address_fk
 , orderheader_with_sk.orderdate
 , orderheader_with_sk.status
-, salesorderdetailid
+, order_detail_with_sk.salesorderdetailid
 , order_detail_with_sk.product_fk
 , order_detail_with_sk.orderqty
 , order_detail_with_sk.specialofferid
